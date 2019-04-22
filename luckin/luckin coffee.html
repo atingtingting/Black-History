@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<style type="text/css">
+body {  
+    margin:0 0 0 0; 
+    background:url('./b.jpg');
+    background-repeat:no-repeat ;
+    background-size:100% 100%;
+    background-attachment: fixed;
+    position: relative;
+    display:flex;
+    flex-flow:column;
+    min-height:100vh;
+}  
+.main{
+  flex:1;
+}
+#header {
+    background-color:black;
+    background:url('./tim.jpg');
+    background-size: 100%;
+    color:white;
+    text-align:left;
+    margin-left: 250px; 
+    padding-left: 50px;
+    width: 1150px;
+    height: 200px;
+    line-height:30px;
+    border:1px solid #000000;
+}
+.headerFont{
+    position: absolute;
+    top:40px;
+}
+#nav {
+    line-height:40px;
+    background-color:#D2B48C;
+    background-image:url('./dao.jpg');
+    height:100%;
+    width:200px;
+    padding-left: 50px;
+    padding-top: 50px;
+    position: fixed;       
+}
+#section {
+    width:1150px;
+    float:left;
+    margin-left: 280px; 
+    margin-top: 0px; 
+    line-height:25px;
+    padding:5px;    
+}
+#footer {
+    background-color:#000000;
+    color:#FFFFFF;
+    text-align:center;
+    padding:5px;  
+    width:1200px;
+    height:20px;
+    margin-left: 250px; 
+    margin-top: 30px; 
+}
+.coffee {
+    float: left;
+    margin-left: 65px;
+    margin-top: 30px; 
+    padding: 30px;
+    width: 250px;
+    height: 300px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+} 
+.coffees{
+    margin-left: 250px;
+}
+span{
+    padding-bottom: 1px;
+    border-bottom: 3px solid #000000;
+}
+a{
+    text-decoration:none;
+} 
+#nav>ul a:hover{
+    padding-bottom: 1px;
+    border-bottom: 3px solid #996666;
+}
+ul{
+    list-style-type:none; /*去圆点*/
+    padding-left: 10px;
+    padding-top: 10px; 
+}
+.kaimg{
+    border: 1px solid #000000;
+    opacity:1.0;
+}
+.kaimg:hover{
+    border: 1px solid #996666;
+    opacity:0.6;
+}
+.secimg{
+    border: 1px solid #000000;
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-top: 8px;   
+}
+button.buy{
+    background:transparent; 
+    color:#000000;
+    width:100px; 
+    height:35px; 
+    border:1px solid#000000;
+    border-radius: 5px;
+    font-size: 15px;
+    font-family: Microsoft YaHei;
+}
+button.buy:hover{
+    background:transparent; 
+    color:#996666;
+    border:1px solid#996666;
+}
+button.log{
+    background:transparent; 
+    border:none; 
+    width:50px; 
+    height:25px; 
+    font-size: 15px;
+}
+button.log:hover{
+    background:transparent; 
+    color:#996666;
+    width:50px; 
+    height:25px;
+    font-size: 15px; 
+}
+.logs{
+    position: absolute;
+    top:0px;
+    left: 80px;
+}
+@font-face
+{
+font-family: h1Font;
+src: url('./汉仪秦川飞影.ttf');
+}
+
+a:link {color:#000000;}    
+a:visited {color:#000000;} 
+a:hover {color:#996666;}   
+a:active {color:#996666;} 
+
+.page{
+    margin-left: 250px;
+    height: 100px;
+    width:100%;
+    line-height: 100px;    
+}
+.page>ul{
+    margin-left: 350px;
+    width:100%;  
+}
+.page>ul>li{
+    float: left;
+    margin-right:15px;
+    margin-left: 15px;
+}
+.num a{
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    background: transparent;
+    text-decoration: none;
+    color: #000000;
+    border-radius: 50%;
+    float: left;
+    margin-top: 38px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+.num a:hover{
+    background: #996666;
+    color: #FFFFFF;
+    opacity:0.6;
+}
+</style>
+</head>
+
+<body >
+
+<div id="header" >
+    <div class="headerFont">
+        <h1 style="font-family:h1Font"><font size="7"><BIG>Luckin Coffee</BIG></font></h1>
+        <h4 >&nbsp;&nbsp;&nbsp;做每个人都喝的起、喝得到的好咖啡。</h4>
+    </div>
+</div>
+
+<div id="nav">
+    <div class="logs">
+        <button type="button" class="log"><a href="#" target="_blank">首页</a></button>
+        <button type="button" class="log"><a href="#" target="_blank">我的</a></button>
+        <button type="button" class="log"><a href="#" target="_blank">退出</a></button>
+    </div>
+    <h3><span>菜单</span></h3>
+    <ul>
+        <li><a href="#" target="_blank">最新产品</a></li>
+        <li><a href="#" target="_blank">季度精选</a></li>
+        <li><a href="#" target="_blank">饮料</a></li>
+        <li><a href="#" target="_blank">美食</a></li>
+        <li><a href="#" target="_blank">咖啡产品</a></li>
+        <li><a href="#" target="_blank">商品</a></li>
+    </ul>
+    <h3><span>其他</span></h3>
+    <ul>
+        <li><a href="#" target="_blank">in门店</a></li>
+        <li><a href="#" target="_blank">咖啡in讲堂</a></li>
+        <li><a href="#" target="_blank">in礼卡</a></li>
+        <li><a href="#" target="_blank">零度劵</a></li>
+        <li><a href="#" target="_blank">关于 <i>Luckin Coffee</i></a></li>
+        <li><a href="#" target="_blank">帮助中心</a></li>
+    </ul>
+</div>
+
+<div id="section">
+    <h2><span>季度精选</span></h2>
+    <hr />
+    <blockquote>似乎每一种咖啡都代表着一种生活方式，在你选择一种咖啡的时候，好像也不完全是因为它的味道，而是它可以治愈你柔软的内心。</blockquote>
+    <img src="./1.gif" class="secimg" alt="无法加载" width="480" height="260" align ="left"/>
+    <p style="line-height:50px">你喝咖啡吗？你爱喝咖啡吗？<br />你喝咖啡是为了它的名字？<br />还是为了喜欢它的味道？<br />你喝咖啡是为了打发时光？<br />还是真的在品尝着其中的味道？</p>
+    <img src="./2.gif" class="secimg" alt="无法加载" width="480" height="260" align ="right" />
+    <p style="margin-left:60px;margin-top:50px;line-height:50px">先别忙着回答我这个问题<br/>点上一杯醇厚的<i>Luckin Coffee</i><br />慢慢品尝<br />仔细想想<br />然后你会有答案<br /><br /></p>
+    <hr style="border:1px dotted "/>
+</div> 
+
+<div class="coffees">
+    <div class="coffee" >
+        <a href="#" ><img src="./ka.jpg" class="kaimg" alt="无法加载" width="250" height="130"/></a>
+        <h4><i> Cappuccino </i>卡布奇诺</h4>
+        <p>三分之一浓缩咖啡，三分之一蒸汽牛奶和三分之一泡沫牛奶，并在上面撒上小颗粒的肉桂粉末。</p>
+        <button type="button" class="buy" style="float:left"><a href="#" target="_blank">在线预约</a></button>
+        <button type="button" class="buy" style="float:right"><a href="#" target="_blank">立刻购买</a></button>
+    </div>
+    <div class="coffee" >
+        <a href="#" ><img src="./jiao.jpg" class="kaimg" alt="无法加载" width="250" height="130"/></a>
+        <h4><i>Caramel Macchiato </i>焦糖玛奇朵</h4>
+        <p>香浓热牛奶上加入浓缩咖啡、香草，再淋上纯正焦糖而制成的饮品，融合三种不同口味。</p>
+        <button type="button" class="buy" style="float:left"><a href="#" target="_blank">在线预约</a></button>
+        <button type="button" class="buy" style="float:right"><a href="#" target="_blank">立刻购买</a></button>
+    </div>
+    <div class="coffee" >
+        <a href="#" ><img src="./na.jpg" class="kaimg" alt="无法加载" width="250" height="130"/></a>
+        <h4><i>Caffè Latte </i>意式拿铁</h4>
+        <p>在刚刚做好的意大利浓缩咖啡中倒入接近沸腾的牛奶，能给普通的牛奶带来让人难以忘怀的味道。</p> 
+        <button type="button" class="buy" style="float:left"><a href="#" target="_blank">在线预约</a></button>
+        <button type="button" class="buy" style="float:right"><a href="#" target="_blank">立刻购买</a></button>
+    </div>
+    <div class="coffee" >
+        <a href="#" ><img src="./lan.jpg" class="kaimg" alt="无法加载" width="250" height="130"/></a>
+        <h4><i>Blue Mountain Coffee </i>蓝山咖啡</h4>
+        <p>口味浓郁香醇，而且由于咖啡的甘、酸、苦三味搭配完美，完全不具苦味，仅有适度而完美的酸味。</p> 
+        <button type="button" class="buy" style="float:left"><a href="#" target="_blank">在线预约</a></button>
+        <button type="button" class="buy" style="float:right"><a href="$" target="_blank">立刻购买</a></button>
+    </div>
+    <div class="coffee" >
+        <a href="#" ><img src="./mo.jpg" class="kaimg" alt="无法加载" width="250" height="130"/></a>
+        <h4><i>Mochaccino  </i>摩卡奇诺</h4>
+        <p>将热鲜奶与奶泡换成发泡奶油，然后再撒上巧克力屑搭配肉桂棒。</p><br/> 
+        <button type="button" class="buy" style="float:left"><a href="#" target="_blank">在线预约</a></button>
+        <button type="button" class="buy" style="float:right"><a href="#" target="_blank">立刻购买</a></button>
+    </div>
+    <div class="coffee" >
+        <a href="#" ><img src="./mao.jpg" class="kaimg" alt="无法加载" width="250" height="130"/></a>
+        <h4><i>Kopi Luwak  </i>麝香猫咖啡</h4>
+        <p>似蜜糖与巧克力的香甜，滑润的浓郁口感，刚入口时舌尖几乎感觉不到水的质量。</p> 
+        <button type="button" class="buy" style="float:left"><a href="#" target="_blank">在线预约</a></button>
+        <button type="button" class="buy" style="float:right"><a href="#" target="_blank">立刻购买</a></button>
+    </div>
+    <div class="coffee" >
+        <a href="#" ><img src="./gui.jpg" class="kaimg" alt="无法加载" width="250" height="130"/></a>
+        <h4><i>Geisha  </i>瑰夏咖啡</h4>
+        <p>瑰夏的干香气非常上扬明亮，有着玫瑰和茉莉花香的特质，还能带出蜜柚以及柑橘香味。</p> 
+        <button type="button" class="buy" style="float:left"><a href="#" target="_blank">在线预约</a></button>
+        <button type="button" class="buy" style="float:right"><a href="#" target="_blank">立刻购买</a></button>
+    </div>
+    <div class="coffee" >
+        <a href="#" ><img src="./pang.jpg" class="kaimg" alt="无法加载" width="250" height="130"/></a>
+        <h4><i>Pound Coffee  </i>庞德咖啡</h4>
+        <p>作为浪漫温馨的代表。庞德咖啡拥有别致的创意，优美的造型，适合一个人享受自恋之美和寂寞之美。</p> 
+        <button type="button" class="buy" style="float:left"><a href="#" target="_blank">在线预约</a></button>
+        <button type="button" class="buy" style="float:right"><a href="#" target="_blank">立刻购买</a></button>
+    </div>
+    <div class="coffee" >
+        <a href="#" ><img src="./kang.jpg" class="kaimg" alt="无法加载" width="250" height="130"/></a>
+        <h4><i>Panna  </i>康宝蓝</h4>
+        <p>嫩白的鲜奶油轻轻飘浮在深沉的咖啡上，宛若一朵出污泥而不染的白莲花，令人不忍一口喝下。</p> 
+        <button type="button" class="buy" style="float:left"><a href="#" target="_blank">在线预约</a></button>
+        <button type="button" class="buy" style="float:right"><a href="#" target="_blank">立刻购买</a></button>
+    </div>
+</div>
+
+<div class="page">
+    <ul>
+        <li><a href="#">首页</a></li>
+        <li><a href="#">上一页</a></li>
+        <div class="num">
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+        </div>
+        <li><a href="#">下一页</a></li>
+        <li><a href="#">末页</a></li>
+    </ul>
+</div>
+
+<div id="footer">
+C o p y r i g h t @ w o r l d e n d p a r t y
+</div>
+
+<script>
+var mood="happy";
+alert(mood);
+</script>
+</body>
+</html>
